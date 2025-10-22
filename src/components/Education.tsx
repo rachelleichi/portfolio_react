@@ -19,7 +19,7 @@ const Education: React.FC = () => {
   return (
     <div id="education" className="relative py-12 mb-12 w-full max-w-4xl mx-auto">
       {/* Section title on the left */}
-      <h2 className="text-4xl sm:text-5xl font-heading text-[var(--accent1)] mb-10 pl-6 md:pl-20 lg:-ml-32 xl:-ml-48 text-left">
+      <h2 className="text-4xl sm:text-5xl font-heading text-[var(--accent1)] mb-10 pl-6 md:pl-20 lg:-ml-32 xl:-ml-48">
         Education
       </h2>
 
@@ -43,10 +43,15 @@ const Education: React.FC = () => {
           <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-mustard rounded-full z-10"></div>
 
           {/* Text on the right side with gap */}
-          <div className="ml-[calc(50%+12px)] w-1/2 text-left">
+          <div
+            className="ml-[calc(50%+12px)] w-1/2 text-left 
+                      sm:ml-[calc(50%+16px)] 
+                      px-4 sm:px-6"
+          >
             <h4 className="font-heading text-xl text-[var(--accent1)] mb-1">{item.degree}</h4>
             <p className="text-[var(--mint1)]">{item.school}</p>
           </div>
+
         </motion.div>
       ))}
     </div>
