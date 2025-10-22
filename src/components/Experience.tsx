@@ -89,9 +89,10 @@ const Experience: React.FC = () => {
 
   return (
     <section id="expérience" className="py-12 mb-12 relative">
-      <h2 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--bg1)] mb-6">
+      <h2 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--bg1)] mb-6 px-4 sm:px-6 md:px-0">
         Expériences
       </h2>
+
 
 
       <div className="relative flex items-center gap-4">
