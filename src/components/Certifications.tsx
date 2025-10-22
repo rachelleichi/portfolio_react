@@ -12,7 +12,7 @@ const certifications = [
 const Certifications: React.FC = () => {
   return (
     <div id="certifications" className="py-12 mb-12">
-      <h3 className="text-5xl font-heading text-[var(--bg1)] text-center mb-10">
+      <h3 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--bg1)] text-center mb-10">
         Certifications
       </h3>
 
