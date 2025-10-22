@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
   return (
     <section id="competences" className="w-full py-16 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-0">
       {/* Title */}
-      <h3 className="text-3xl sm:text-4xl md:text-5xl font-heading text-[var(--mint1)] mb-8 text-center">
+      <h3 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--mint1)] mb-8 text-center">
         Compétences
       </h3>
 
