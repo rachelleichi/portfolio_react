@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Cybersécurité",
+    "icon": "/cyber.png",
+    "details": ["Sécurité réseau", "Cryptographie", "Tests d’intrusion"]
+  },
+  {
+    "name": "Réseaux",
+    "icon": "/reseau.png",
+    "details": ["CCNA", "Configuration routeurs", "Switches"]
+  },
+  {
+    "name": "Administration systèmes",
+    "icon": "/admin.png",
+    "details": ["Linux", "Windows Server", "Scripting"]
+  },
+  {
+    "name": "Programmation",
+    "icon": "/progra.png",
+    "details": ["Python", "C++", "Java"]
+  },
+  {
+    "name": "Développement web",
+    "icon": "/dev.png",
+    "details": ["React", "Flask", "Tailwind", "REST API"]
+  },
+  {
+    "name": "Systèmes embarqués",
+    "icon": "/embeded.png",
+    "details": ["Arduino", "Raspberry Pi", "ESP32"]
+  }
+]
