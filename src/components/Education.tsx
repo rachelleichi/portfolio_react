@@ -17,12 +17,12 @@ const reversedData = [...educationData].reverse()
 
 const Education: React.FC = () => {
   return (
-    <div className="relative w-full max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-0">
-
+    <div id="education" className="relative py-12 mb-12 w-full max-w-4xl mx-auto">
       {/* Section title on the left */}
-      <h2 className="text-5xl font-heading text-[var(--eccent1)] mb-6 text-left -ml-6">
+      <h2 className="text-5xl font-heading text-[var(--accent1)] mb-10 text-left pl-6">
         Education
       </h2>
+      
 
       {/* Vertical line in center */}
       <div className="absolute left-1/2 top-12 bottom-12 w-1 bg-mustard/50 -translate-x-1/2 rounded"></div>

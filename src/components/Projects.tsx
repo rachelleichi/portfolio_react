@@ -111,7 +111,7 @@ const Projects: React.FC = () => {
   }
 
   return (
-    <section id="projets" className="py-12 bg-[var(--mint1)] mb-12 relative">
+    <section id="projets" className="py-12 mb-12 relative">
       <h2 className="text-5xl font-heading text-[var(--bg1)] mb-6 text-center">
         Projets
       </h2>
