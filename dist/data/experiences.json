@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Internship at ABC Corp",
+    "slug": "abc-internship",
+    "company": "ABC Corp",
+    "role": "Cybersecurity Intern",
+    "duration": "June 2024 - August 2024",
+    "description": "Worked on network security, vulnerability assessments, and internal audits.",
+    "skills": "Networking, Security, Python",
+    "img": "/experience.png",
+    "screenshots": ["/experience.png", "/experience.png"]
+  },
+  {
+    "title": "Volunteer at AFEV",
+    "slug": "afev-volunteer",
+    "company": "AFEV",
+    "role": "Digital Coach",
+    "duration": "Sept 2024 - Present",
+    "description": "Helped people achieve digital autonomy with workshops and one-on-one support.",
+    "skills": "Teaching, Digital Literacy, Communication",
+    "img": "/experience.png",
+    "screenshots": ["/experience.png", "/experience.png"]
+  },
+  {
+    "title": "lol",
+    "slug": "afev-volunteer",
+    "company": "AFEV",
+    "role": "Digital Coach",
+    "duration": "Sept 2024 - Present",
+    "description": "Helped people achieve digital autonomy with workshops and one-on-one support.",
+    "skills": "Teaching, Digital Literacy, Communication",
+    "img": "/experience.png",
+    "screenshots": ["/experience.png", "/experience.png"]
+  },
+  {
+    "title": "lalal",
+    "slug": "afev-volunteer",
+    "company": "AFEV",
+    "role": "Digital Coach",
+    "duration": "Sept 2024 - Present",
+    "description": "Helped people achieve digital autonomy with workshops and one-on-one support.",
+    "skills": "Teaching, Digital Literacy, Communication",
+    "img": "/experience.png",
+    "screenshots": ["/experience.png", "/experience.png"]
+  }
+]

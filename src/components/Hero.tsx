@@ -1,7 +1,11 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Hero: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const links = ['Projets', 'À propos', 'Expérience', 'Compétences', 'Contact']
+
   return (
     <section
       id="hero"
@@ -9,10 +13,11 @@ const Hero: React.FC = () => {
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
       {/* --- HEADER / MENU --- */}
-      <header className="absolute top-0 left-0 w-full py-6 px-6 md:px-16 z-10">
+      <header className="absolute top-0 left-0 w-full py-6 px-6 md:px-16 z-20">
         <div className="flex items-center justify-between">
-          <nav className="flex items-center gap-8 text-lg font-semibold text-accent1">
-            {['Projets', 'À propos', 'Expérience', 'Compétences', 'Contact'].map((link, i) => (
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex items-center gap-8 text-lg font-semibold text-accent1">
+            {links.map((link, i) => (
               <a
                 key={i}
                 href={`#${link.toLowerCase().replace(' ', '')}`}
@@ -24,14 +29,53 @@ const Hero: React.FC = () => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
+          {/* Language Buttons */}
+          <div className="hidden md:flex items-center gap-4">
             <button className="px-3 py-1 border border-accent1 rounded text-accent1 hover:bg-accent1 hover:text-bg1 transition">
               FR
             </button>
             <div className="text-lg text-accent1">🇬🇧</div>
           </div>
+
+          {/* Mobile Hamburger */}
+          <button
+            className="md:hidden text-accent1 text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
       </header>
+
+      {/* --- Mobile Side Drawer --- */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'tween', duration: 0.3 }}
+            className="fixed top-0 right-0 h-full w-64 bg-bg1 z-30 shadow-lg flex flex-col p-6 gap-6"
+          >
+            {links.map((link, i) => (
+              <a
+                key={i}
+                href={`#${link.toLowerCase().replace(' ', '')}`}
+                className="text-accent1 text-xl font-semibold hover:text-mustard transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link}
+              </a>
+            ))}
+            <div className="flex items-center gap-4 mt-auto">
+              <button className="px-3 py-1 border border-accent1 rounded text-accent1 hover:bg-accent1 hover:text-bg1 transition">
+                FR
+              </button>
+              <div className="text-lg text-accent1">🇬🇧</div>
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
 
       {/* --- Main Hero Content --- */}
       <div className="relative z-10 container mx-auto flex justify-start items-center h-full px-6 md:px-16">
