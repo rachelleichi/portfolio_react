@@ -89,7 +89,7 @@ const Experience: React.FC = () => {
 
   return (
     <section id="expérience" className="py-12 mb-12 relative">
-      <h2 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--bg1)] mb-6 text-left">
+      <h2 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--bg1)] mb-6">
         Expériences
       </h2>
 
