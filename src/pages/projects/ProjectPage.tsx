@@ -50,14 +50,14 @@ const ProjectPage: React.FC = () => {
           ))}
         </div>
 
-        {/* Repository link */}
+        {/* GitHub button */}
         <a
           href={project.repo}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-mustard hover:underline mb-8"
+          className="inline-block px-6 py-3 bg-mustard text-bg1 font-semibold rounded-full hover:bg-mustard/80 mb-8 transition"
         >
-          View Repository
+          GitHub
         </a>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

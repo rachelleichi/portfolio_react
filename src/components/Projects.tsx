@@ -142,7 +142,6 @@ const Projects: React.FC = () => {
                     img={proj.img}
                     tags={proj.tags}
                     slug={proj.slug}
-                    repo={proj.repo}
                   />
                 </div>
               ))}
@@ -185,7 +184,6 @@ const Projects: React.FC = () => {
                 img={proj.img}
                 tags={proj.tags}
                 slug={proj.slug}
-                repo={proj.repo}
               />
             ))}
           </div>
