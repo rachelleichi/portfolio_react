@@ -5,7 +5,8 @@
     "description": "A simple chat application using Python, Pandas, NumPy, Kivy, and Tkinter. It allows multiple users to chat in real-time, store history locally, and customize their interface.",
     "tags": "Python, Pandas, NumPy, Kivy, Tkinter",
     "img": "/projet.jpg",
-    "screenshots": ["/projet.jpg", "/projet.jpg"]
+    "screenshots": ["/projet.jpg", "/projet.jpg"],
+    "repo": "https://github.com/yourusername/chat-app"
   },
   {
     "title": "Portfolio site",
@@ -13,38 +14,43 @@
     "description": "My personal portfolio built with React, Tailwind, and Framer Motion. Showcases projects, skills, and experiences with interactive components.",
     "tags": "React, Tailwind, Framer Motion",
     "img": "/projet.jpg",
-    "screenshots": ["/portfolio1.png", "/portfolio2.png"]
+    "screenshots": ["/projet.jpg", "/projet.jpg"],
+    "repo": "https://github.com/yourusername/portfolio-site"
   },
   {
     "title": "Smart Home System",
-    "slug": "chat-app",
+    "slug": "smart-home-system",
     "description": "A home automation system using Python, Flask, and ESP32. Controls lights, sensors, and temperature, with a web interface for monitoring.",
     "tags": "Python, Flask, ESP32, IoT",
     "img": "/projet.jpg",
-    "screenshots": ["/smarthome1.png", "/smarthome2.png"]
+    "screenshots": ["/projet.jpg", "/projet.jpg"],
+    "repo": "https://github.com/yourusername/smart-home-system"
   },
   {
     "title": "AI Object Detector",
-    "slug": "chat-app",
+    "slug": "ai-object-detector",
     "description": "An AI-based object detection application using YOLOv8 and OpenCV. Detects objects in images and video streams with real-time annotations.",
     "tags": "Python, YOLOv8, OpenCV",
     "img": "/projet.jpg",
-    "screenshots": ["/ai1.png", "/ai2.png"]
+    "screenshots": ["/projet.jpg", "/projet.jpg"],
+    "repo": "https://github.com/yourusername/ai-object-detector"
   },
   {
     "title": "Weather Dashboard",
-    "slug": "chat-app",
+    "slug": "weather-dashboard",
     "description": "A dashboard that shows weather forecasts, historical data, and live updates using React, Chart.js, and OpenWeather API.",
     "tags": "React, Chart.js, OpenWeather API",
     "img": "/projet.jpg",
-    "screenshots": ["/weather1.png", "/weather2.png"]
+    "screenshots": ["/projet.jpg", "/projet.jpg"],
+    "repo": "https://github.com/yourusername/weather-dashboard"
   },
   {
     "title": "E-commerce Store",
-    "slug": "chat-app",
+    "slug": "ecommerce-store",
     "description": "An online store built with React and Node.js. Includes product listings, shopping cart, checkout process, and order management.",
     "tags": "React, Node.js, Express, MongoDB",
     "img": "/projet.jpg",
-    "screenshots": ["/store1.png", "/store2.png"]
+    "screenshots": ["/projet.jpg", "/projet.jpg"],
+    "repo": "https://github.com/yourusername/ecommerce-store"
   }
 ]

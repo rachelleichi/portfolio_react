@@ -2,14 +2,23 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
+interface Project {
+  title: string
+  img: string
+  tags: string
+  slug: string
+  repo: string
+}
+
 interface ProjectCardProps {
   title: string
   img: string
   tags: string
   slug: string
+  repo?: string
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, img, tags, slug }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, img, tags, slug, repo }) => (
   <Link to={`/projects/${slug}`} className="block w-full h-full">
     <motion.div
       whileHover={{ scale: 1.02 }}
@@ -22,11 +31,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, img, tags, slug }) => 
       />
       <h4 className="font-semibold text-[var(--bg1)] text-2xl text-center">{title}</h4>
       <p className="text-sm text-[var(--bg1)] text-center">{tags}</p>
+
+      {/* Optional repo link */}
+      {repo && (
+        <a
+          href={repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 text-mustard text-sm hover:underline"
+        >
+          Repository
+        </a>
+      )}
     </motion.div>
   </Link>
 )
-
-
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([])
@@ -123,8 +142,8 @@ const Projects: React.FC = () => {
                     img={proj.img}
                     tags={proj.tags}
                     slug={proj.slug}
+                    repo={proj.repo}
                   />
-
                 </div>
               ))}
             </div>
@@ -146,8 +165,6 @@ const Projects: React.FC = () => {
             >
               Explorez Plus
             </button>
-
-
           </div>
         </>
       ) : (
@@ -160,7 +177,6 @@ const Projects: React.FC = () => {
             ✕
           </button>
 
-
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {projects.map((proj, index) => (
               <ProjectCard
@@ -168,11 +184,11 @@ const Projects: React.FC = () => {
                 title={proj.title}
                 img={proj.img}
                 tags={proj.tags}
-                slug={proj.slug}   
+                slug={proj.slug}
+                repo={proj.repo}
               />
             ))}
           </div>
-
         </div>
       )}
     </section>

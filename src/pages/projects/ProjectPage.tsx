@@ -7,6 +7,7 @@ interface Project {
   tags: string
   img: string
   screenshots: string[]
+  repo: string
 }
 
 const ProjectPage: React.FC = () => {
@@ -36,9 +37,9 @@ const ProjectPage: React.FC = () => {
         </Link>
 
         <h1 className="text-5xl font-heading text-accent1 mb-4">{project.title}</h1>
-        <p className="text-lg text-cream1 mb-8">{project.description}</p>
+        <p className="text-lg text-cream1 mb-4">{project.description}</p>
 
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.split(',').map((tag, i) => (
             <span
               key={i}
@@ -48,6 +49,16 @@ const ProjectPage: React.FC = () => {
             </span>
           ))}
         </div>
+
+        {/* Repository link */}
+        <a
+          href={project.repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-mustard hover:underline mb-8"
+        >
+          View Repository
+        </a>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {project.screenshots.map((src, i) => (
