@@ -24,7 +24,10 @@ const Skills: React.FC = () => {
   return (
     <section id="compétences" className="w-full py-16 flex flex-col items-center justify-center">
       {/* Title */}
-      <h3 className="text-5xl font-heading text-[var(--mint1)] mb-6 text-center">Compétences</h3>
+      <h3 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--mint1)] mb-6 text-center">
+        Compétences
+      </h3>
+
 
       {/* Grid icons */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 justify-items-center">
