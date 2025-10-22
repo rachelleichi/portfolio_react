@@ -19,9 +19,12 @@ const Education: React.FC = () => {
   return (
     <div id="education" className="relative py-12 mb-12 w-full max-w-4xl mx-auto">
       {/* Section title on the left */}
-      <h2 className="text-5xl font-heading text-[var(--accent1)] mb-10 text-left pl-6">
+      <h2 className="text-4xl sm:text-5xl font-heading text-[var(--accent1)] mb-10 pl-6 md:pl-20 lg:-ml-32 xl:-ml-48">
         Education
       </h2>
+
+
+
       
 
       {/* Vertical line in center */}

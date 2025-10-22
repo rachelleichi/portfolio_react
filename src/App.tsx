@@ -44,7 +44,7 @@ export default function App(): JSX.Element {
                 </section>
 
                 {/* EDUCATION */}
-                <section id="education" className="bg-bg1 text-white flex justify-center">
+                <section id="education" className="bg-bg1 text-white flex justify-center items-center">
                   <Education />
                 </section>
 
