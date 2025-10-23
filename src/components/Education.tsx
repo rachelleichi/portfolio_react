@@ -8,7 +8,7 @@ interface EducationItem {
 
 const educationData: EducationItem[] = [
   { degree: "Bac spécialité math - physique", school: "Lycée Kadi Merbah, Alger" },
-  { degree: "Licence informatique", school: "Université Avignon" },
+  { degree: "Licence informatique (L1+L2)", school: "Université Avignon" },
   { degree: "Bachelor R&T option cybersécurité", school: "IUT AMU, Marseille" },
 ]
 

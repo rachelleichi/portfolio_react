@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Gestion de parc automobile",
+    "prompt_img": "Vibrant flat illustration of a car fleet management dashboard, centered composition for round card. Showing vehicles, sales, clients, and data charts. Light, bright, modern colors with strong green accent and pops of palette #2b2719, #acbfaa, #5e6a4b, #7a6fa5, #87450F. Elegant, eye-catching, professional, minimalistic, portfolio-ready.",
+    "prompt_screenshot": "Flat UI mockup of car fleet management app with charts, tables, and icons. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, modern portfolio screenshot."
+  },
+  {
+    "title": "Jeu Puissance 4",
+    "prompt_img": "Vibrant isometric illustration of Connect Four game interface with AI opponent, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Elegant, eye-catching, professional, modern flat design, portfolio-ready.",
+    "prompt_screenshot": "Flat interface of Connect Four game showing grid, counters, and AI interaction. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, modern, clean, professional portfolio screenshot."
+  },
+  {
+    "title": "Portfolio personnel",
+    "prompt_img": "Vibrant flat illustration of a personal portfolio website dashboard showing projects, CV, and animations, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #0c0705, #7e8273, #b6bcb2, #32432b, #622d0d. Elegant, eye-catching, professional, minimalist UI, portfolio-ready.",
+    "prompt_screenshot": "Flat UI mockup of portfolio website interface showing projects, navigation, and animations. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, modern portfolio screenshot."
+  },
+  {
+    "title": "Entreps - Simulation d’entreprise",
+    "prompt_img": "Vibrant flat illustration of a business simulation dashboard including finance, production, marketing, and analytics, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #2b2719, #acbfaa, #5e6a4b, #7a6fa5, #87450F. Elegant, eye-catching, professional, modern portfolio concept.",
+    "prompt_screenshot": "Flat UI mockup of business simulation software showing financial charts and strategy analytics. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, professional, readable portfolio screenshot."
+  },
+  {
+    "title": "Conception d’un centre de données (Tier 2)",
+    "prompt_img": "Vibrant flat isometric illustration of a Tier 2 data center with servers, cooling systems, energy management, and network layout, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Elegant, eye-catching, professional, portfolio-ready.",
+    "prompt_screenshot": "Flat UI mockup of data center management dashboard showing server metrics and network schematics. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Système IoT de mesure et détection",
+    "prompt_img": "Vibrant flat illustration of an IoT system with ESP32, Raspberry Pi, sensors, and data visualization dashboard, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #0c0705, #7e8273, #b6bcb2, #32432b, #622d0d. Elegant, eye-catching, professional, portfolio-ready.",
+    "prompt_screenshot": "Flat UI illustration of IoT monitoring dashboard showing sensor data (luminosity, current, presence). Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, clean, professional portfolio screenshot."
+  },
+  {
+    "title": "Détection de chiffres par IA (en cours)",
+    "prompt_img": "Vibrant flat illustration of AI system recognizing handwritten digits, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #2b2719, #acbfaa, #5e6a4b, #7a6fa5, #87450F. Elegant, eye-catching, professional, minimalistic, portfolio-ready.",
+    "prompt_screenshot": "Flat UI illustration of AI digit recognition interface with dataset and metrics. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Chatbot intelligent (en cours)",
+    "prompt_img": "Vibrant flat illustration of a smart chatbot interface, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Elegant, eye-catching, professional, modern flat design for portfolio.",
+    "prompt_screenshot": "Flat UI illustration of chatbot interface showing conversation, intents, and analytics. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Prédiction de rendement agricole (en cours)",
+    "prompt_img": "Vibrant flat illustration of agricultural yield prediction dashboard with charts and weather/soil data, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #0c0705, #7e8273, #b6bcb2, #32432b, #622d0d. Elegant, eye-catching, professional, portfolio-ready.",
+    "prompt_screenshot": "Flat UI illustration of agricultural yield prediction dashboard with graphs and maps. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Implémentation d’algorithmes en Julia",
+    "prompt_img": "Vibrant flat illustration of algorithm implementation in Julia, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #2b2719, #acbfaa, #5e6a4b, #7a6fa5, #87450F. Elegant, eye-catching, professional, modern flat design, portfolio-ready.",
+    "prompt_screenshot": "Flat UI illustration of algorithm dashboard showing results and comparisons. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Monitoring de serveurs local",
+    "prompt_img": "Vibrant flat illustration of local server monitoring dashboard with CPU, memory, and network charts, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Elegant, eye-catching, professional, portfolio-ready.",
+    "prompt_screenshot": "Flat UI illustration of server monitoring interface showing CPU, memory, and network metrics. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Compilateur / Assembleur",
+    "prompt_img": "Vibrant flat illustration of a simplified compiler generating x86_64 assembly, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #0c0705, #7e8273, #b6bcb2, #32432b, #622d0d. Elegant, eye-catching, professional, minimalistic, portfolio-ready.",
+    "prompt_screenshot": "Flat UI illustration of compiler interface showing code input, parsing, and generated assembly output. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "Pentest & audit de sécurité (Kali Linux)",
+    "prompt_img": "Vibrant flat illustration of a cybersecurity pentest dashboard on Kali Linux, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #2b2719, #acbfaa, #5e6a4b, #7a6fa5, #87450F. Elegant, eye-catching, professional, modern flat design for portfolio.",
+    "prompt_screenshot": "Flat UI mockup of pentesting dashboard showing network scans, exploits, and reports. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  },
+  {
+    "title": "ChatApp sécurisée",
+    "prompt_img": "Vibrant flat illustration of a secure chat app interface in Python and Kivy, centered composition for round card. Light, bright, modern colors with strong green accent and pops of palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Elegant, eye-catching, professional, portfolio-ready.",
+    "prompt_screenshot": "Flat UI mockup of secure chat app interface showing messaging, encryption indicators, and user list. Palette #969aa0, #0b0904, #9b5a38, #1e422b, #5450a2. Vibrant, elegant, readable, professional portfolio screenshot."
+  }
+]

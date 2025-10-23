@@ -22,23 +22,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, img, tags, slug, repo 
   <Link to={`/projects/${slug}`} className="block w-full h-full">
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className="flex flex-col items-center cursor-pointer"
+      className="flex flex-col items-center cursor-pointer p-6"
     >
       <img
         src={img}
         alt={title}
         className="circle-img mb-4 w-full h-64 object-cover rounded-2xl shadow-lg"
       />
-      <h4 className="font-semibold text-[var(--bg1)] text-2xl text-center">{title}</h4>
-      <p className="text-sm text-[var(--bg1)] text-center">{tags}</p>
+      <h4 className="font-semibold text-[var(--bg1)] text-2xl text-center break-words">
+        {title}
+      </h4>
+      <p className="text-sm text-[var(--bg1)] text-center break-words mt-1">
+        {tags}
+      </p>
 
-      {/* Optional repo link */}
       {repo && (
         <a
           href={repo}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 text-mustard text-sm hover:underline"
+          className="mt-2 text-mustard text-sm hover:underline break-words"
         >
           Repository
         </a>
@@ -53,7 +56,6 @@ const Projects: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState(1)
   const [showAll, setShowAll] = useState(false)
 
-  // Fetch JSON dynamically
   useEffect(() => {
     fetch('/data/projects.json')
       .then(res => res.json())
@@ -61,7 +63,6 @@ const Projects: React.FC = () => {
       .catch(err => console.error('Error loading JSON:', err))
   }, [])
 
-  // Responsive number of visible cards
   useEffect(() => {
     const updateVisibleCount = () => {
       const width = window.innerWidth
@@ -75,7 +76,6 @@ const Projects: React.FC = () => {
     return () => window.removeEventListener('resize', updateVisibleCount)
   }, [])
 
-  // Infinite auto-loop
   useEffect(() => {
     if (!showAll && projects.length > visibleCount) {
       const interval = setInterval(() => {
@@ -87,7 +87,6 @@ const Projects: React.FC = () => {
     }
   }, [projects, visibleCount, showAll])
 
-  // Handle buttons (manual control)
   const handlePrev = () => {
     setStartIndex(prev =>
       (prev - 1 + projects.length) % projects.length
@@ -103,10 +102,9 @@ const Projects: React.FC = () => {
   const handleShowAll = () => setShowAll(true)
   const handleBackToCarousel = () => setShowAll(false)
 
-  // Circular slicing (so carousel wraps smoothly)
   const getVisibleProjects = () => {
     if (projects.length === 0) return []
-    const extended = [...projects, ...projects] // duplicate list for smooth wrap
+    const extended = [...projects, ...projects]
     return extended.slice(startIndex, startIndex + visibleCount)
   }
 
@@ -118,9 +116,7 @@ const Projects: React.FC = () => {
 
       {!showAll ? (
         <>
-          {/* Carousel */}
           <div className="flex items-center justify-center gap-6 relative">
-            {/* Left button */}
             {projects.length > visibleCount && (
               <button
                 onClick={handlePrev}
@@ -128,7 +124,6 @@ const Projects: React.FC = () => {
               >&lt;</button>
             )}
 
-            {/* Cards */}
             <div className="flex flex-1 gap-6 overflow-hidden justify-center">
               {getVisibleProjects().map((proj, index) => (
                 <div
@@ -147,7 +142,6 @@ const Projects: React.FC = () => {
               ))}
             </div>
 
-            {/* Right button */}
             {projects.length > visibleCount && (
               <button
                 onClick={handleNext}
@@ -156,7 +150,6 @@ const Projects: React.FC = () => {
             )}
           </div>
 
-          {/* Explore button */}
           <div className="text-center mt-10">
             <button
               onClick={handleShowAll}
@@ -167,7 +160,6 @@ const Projects: React.FC = () => {
           </div>
         </>
       ) : (
-        // Show all projects grid
         <div className="mt-8 relative">
           <button
             onClick={handleBackToCarousel}

@@ -4,13 +4,24 @@ const Bio: React.FC = () => {
   return (
     <section id="àpropos" className="py-20 mb-12">
       <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center md:items-start gap-12">
-        {/* Left Image */}
+        {/* Left Flip Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
-          <img
-            src="/public/bio.png"
-            alt="Illustration of Rachel Meflah"
-            className="w-72 h-72 object-cover rounded-2xl shadow-lg"
-          />
+          <div className="relative w-72 h-72 perspective">
+            <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d hover:rotate-y-180">
+              {/* Front Side */}
+              <img
+                src="/bio_bg.png"
+                alt="Front Bio Illustration"
+                className="absolute w-full h-full object-cover rounded-2xl shadow-lg backface-hidden"
+              />
+              {/* Back Side */}
+              <img
+                src="/bio.png"
+                alt="Back Bio Illustration"
+                className="absolute w-full h-full object-cover rounded-2xl shadow-lg rotate-y-180 backface-hidden"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Right Text */}

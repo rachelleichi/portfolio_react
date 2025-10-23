@@ -1,46 +1,46 @@
 [
   {
-    "title": "Internship at ABC Corp",
-    "slug": "abc-internship",
-    "company": "ABC Corp",
-    "role": "Cybersecurity Intern",
-    "duration": "June 2024 - August 2024",
-    "description": "Worked on network security, vulnerability assessments, and internal audits.",
-    "skills": "Networking, Security, Python",
-    "img": "/experience.png",
-    "screenshots": ["/experience.png", "/experience.png"]
+    "title": "Bénévolat - AFEV",
+    "slug": "benevolat-afev",
+    "company": "Association AFEV",
+    "role": "Bénévole en accompagnement éducatif",
+    "duration": "Septembre 2022 - Présent",
+    "description": "Soutien hebdomadaire à des jeunes en difficulté scolaire et sociale, à travers un accompagnement individualisé et des activités éducatives collectives. Ce bénévolat développe des compétences relationnelles, d’écoute, et de pédagogie, tout en contribuant à la lutte contre les inégalités scolaires.",
+    "skills": "Pédagogie, Communication, Empathie, Esprit d’équipe",
+    "img": "afev.png",
+    "screenshots": ["/"]
   },
   {
-    "title": "Volunteer at AFEV",
-    "slug": "afev-volunteer",
-    "company": "AFEV",
-    "role": "Digital Coach",
-    "duration": "Sept 2024 - Present",
-    "description": "Helped people achieve digital autonomy with workshops and one-on-one support.",
-    "skills": "Teaching, Digital Literacy, Communication",
-    "img": "/experience.png",
-    "screenshots": ["/experience.png", "/experience.png"]
+    "title": "Service Civique - UNIS-CITÉ",
+    "slug": "service-civique-uniscite",
+    "company": "Association UNIS-CITÉ, Avignon",
+    "role": "Volontaire en inclusion numérique",
+    "duration": "Octobre 2023 - Juillet 2024",
+    "description": "Participation à un programme de service civique visant à réduire la fracture numérique auprès des seniors. Animation d’ateliers collectifs et accompagnements personnalisés pour aider les usagers à devenir autonomes dans l’usage du numérique. Développement de compétences en animation, pédagogie et organisation de projet social.",
+    "skills": "Inclusion numérique, Animation, Sens du service, Autonomie",
+    "img": "num.jpeg",
+    "screenshots": ["/"]
   },
   {
-    "title": "lol",
-    "slug": "afev-volunteer",
-    "company": "AFEV",
-    "role": "Digital Coach",
-    "duration": "Sept 2024 - Present",
-    "description": "Helped people achieve digital autonomy with workshops and one-on-one support.",
-    "skills": "Teaching, Digital Literacy, Communication",
-    "img": "/experience.png",
-    "screenshots": ["/experience.png", "/experience.png"]
+    "title": "Bénévolat - Jeux pour maternelles",
+    "slug": "projet-jeux-educatifs",
+    "company": "Écoles maternelles de Marseille",
+    "role": "Bénévole ",
+    "duration": "Octobre 2024 - Décembre 2024",
+    "description": "Participation bénévole à un projet de recherche en école maternelle, visant à évaluer les enfants en maths à travers des jeux éducatifs. Conception et test de mini-jeux interactifs favorisant la reconnaissance des nombres et la logique mathématique. Collaboration avec les enseignants et les chercheurs.",
+    "skills": "Python, Jeux éducatifs, Pédagogie, Travail interdisciplinaire",
+    "img": "mat.jpeg",
+    "screenshots": ["/"]
   },
   {
-    "title": "lalal",
-    "slug": "afev-volunteer",
-    "company": "AFEV",
-    "role": "Digital Coach",
-    "duration": "Sept 2024 - Present",
-    "description": "Helped people achieve digital autonomy with workshops and one-on-one support.",
-    "skills": "Teaching, Digital Literacy, Communication",
-    "img": "/experience.png",
-    "screenshots": ["/experience.png", "/experience.png"]
+    "title": "Stage IoT - IUT Saint-Jérôme",
+    "slug": "stage-iot",
+    "company": "IUT d’Aix-Marseille (site Saint-Jérôme)",
+    "role": "Stagiaire en Internet des Objets",
+    "duration": "Avril 2025 - Juin 2025",
+    "description": "Conception d’un système IoT complet pour la collecte de données de capteurs (luminosité, intensité électrique, détection de présence). Développement de deux serveurs Flask pour visualiser les données en temps réel et transmission de donnée, intégration avec Grafana et MariaDB,automatisation de sauvergarde et alertes et documentation du projet sur GitHub. Expérience alliant électronique, programmation et administration nsystème.",
+    "skills": "IoT, Python (Flask), Raspberry Pi, MariaDB, Grafana, ESP32, STM32, Autonomie, Automatisation, Documentation",
+    "img": "cam.jpg",
+    "screenshots": ["/"]
   }
 ]

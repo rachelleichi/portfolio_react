@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-
+import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 interface Experience {
   title: string
@@ -29,9 +29,13 @@ const ExperiencePage: React.FC = () => {
 
   if (!experience) return <p className="text-center text-white mt-20">Loading experience...</p>
 
+  // Filter valid screenshots (ignore "/")
+  const validScreenshots = experience.screenshots?.filter(src => src !== '/') || []
+
   return (
-    <div className="min-h-screen bg-bg1 text-white px-6 py-16">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen flex flex-col bg-bg1 text-white">
+      {/* Main content */}
+      <div className="max-w-4xl mx-auto px-6 py-12 flex-grow">
         <Link
           to="/#experience"
           className="text-accent1 hover:underline mb-6 inline-block"
@@ -56,9 +60,10 @@ const ExperiencePage: React.FC = () => {
           ))}
         </div>
 
-        {experience.screenshots && experience.screenshots.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {experience.screenshots.map((shot, i) => (
+        {/* Screenshots grid */}
+        {validScreenshots.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+            {validScreenshots.map((shot, i) => (
               <img
                 key={i}
                 src={shot}
@@ -69,6 +74,34 @@ const ExperiencePage: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Footer */}
+      <footer className="bg-cream1 text-bg1 py-12 text-center">
+        <div className="container flex flex-col items-center gap-4">
+          <div className="flex items-center gap-6">
+            <span className="text-bg1">Retrouve-moi sur :</span>
+            <a
+              href="https://www.linkedin.com/in/rachel-meflah/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#0e76a8] hover:text-[#084a7a] transition text-2xl"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/rachelmeflah/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#E1306C] hover:text-[#9f0e4b] transition text-2xl"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+          <p className="text-bg1">© {new Date().getFullYear()} Rachel Meflah</p>
+        </div>
+      </footer>
     </div>
   )
 }

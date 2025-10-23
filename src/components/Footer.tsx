@@ -3,9 +3,8 @@ import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-12 text-center text-sm text-[var(--bg1)] bg-[var(--accent1)]">
+    <footer className="py-12 text-center text-sm text-[var(--bg1)] bg-[var(--cream1)]">
       <div className="container flex flex-col items-center gap-4">
-
         <div className="flex items-center gap-6">
           <span className="text-[var(--bg1)]">Retrouve-moi sur :</span>
 

@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
     <section
       id="hero"
       className="relative min-h-screen bg-cover bg-center flex flex-col justify-center text-white"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
+      style={{ backgroundImage: "url('/alg1.jpg')" }}
     >
       {/* --- HEADER / MENU --- */}
       <header className="absolute top-0 left-0 w-full py-6 px-6 md:px-16 z-20">
@@ -30,12 +30,12 @@ const Hero: React.FC = () => {
           </nav>
 
           {/* Language Buttons */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* <div className="hidden md:flex items-center gap-4">
             <button className="px-3 py-1 border border-accent1 rounded text-accent1 hover:bg-accent1 hover:text-bg1 transition">
               FR
             </button>
             <div className="text-lg text-accent1">🇬🇧</div>
-          </div>
+          </div> */}
 
           {/* Mobile Hamburger */}
           <button
