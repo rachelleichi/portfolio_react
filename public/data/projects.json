@@ -3,19 +3,10 @@
     "title": "Gestion de parc automobile",
     "slug": "gestion-parc-automobile",
     "description": "Application Java orientée objet pour la gestion complète d'un parc de véhicules : gestion des clients, des ventes et des locations, recherche avancée et persistance des données via sérialisation/désérialisation JSON. Conçue pour être extensible et testable (architecture MVC).",
-    "tags": "Java, JSON, POO, MVC, Gestion de données",
+    "tags": "Java, JSON, POO, Gestion de données",
     "img": "/java.jpg",
     "screenshots": ["/"],
     "repo": "https://github.com/rachelleichi/gestion_parc_automobile"
-  },
-  {
-    "title": "Jeu Puissance 4",
-    "slug": "jeu-puissance4-cpp",
-    "description": "Implémentation complète du jeu Puissance 4 en C++ : moteur de jeu, gestion de l'état, IA de l'adversaire (algorithme Minimax avec élagage), et gestion fine de la mémoire. Optimisé pour la robustesse et l'efficacité algorithmique.",
-    "tags": "C++, Algorithmique, POO, IA, Minimax",
-    "img": "/p4.jpg",
-    "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/puissance4_cpp"
   },
   {
     "title": "Portfolio personnel",
@@ -27,6 +18,60 @@
     "repo": "https://github.com/rachelleichi/portfolio_react"
   },
   {
+    "title": "Système IoT de mesure et détection",
+    "slug": "iot-mesure-detection",
+    "description": "Projet de stage intégrant ESP32, Raspberry Pi et ESP32-CAM pour la collecte de mesures (luminosité VEML7700, courant ACS712, détection de présence via capteurs PIR et YOLOv8). Architecture : acquisition embarquée, transmission HTTP vers un serveur Flask, stockage MariaDB et visualisation Grafana. Focus sur fiabilité et comparatif de performances IA.",
+    "tags": "IoT, YOLOv8, ESP32, Raspberry Pi, Flask, Grafana, MariaDB, VEML7700, ACS712",
+    "img": "/iot.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/esp32-raspberry-esp32cam-veml7700-ASC712-STM32"
+  },
+  {
+    "title": "Pentest & audit de sécurité (Kali Linux)",
+    "slug": "pentest-kali",
+    "description": "Projet d'audit d'infrastructure et d'application basé sur Kali Linux : reconnaissance passive/active, énumération, exploitation contrôlée, post-exploitation et rédaction d'un rapport technique complet (vulnérabilités, preuves, recommandations et plan de remédiation). Livrables : checks list, rapports ST0/privilege escalation reproduit, et playbook de remediation.",
+    "tags": "Kali Linux, Pentesting, Nmap, Metasploit, Burp Suite, OWASP, Rapport de sécurité",
+    "img": "/pen.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/pentest_kali"
+  },
+   {
+    "title": "Monitoring de serveurs local",
+    "slug": "monitoring-serveurs-local",
+    "description": "Solution locale de supervision pour serveurs : collecte métriques CPU/mémoire/réseau, interface web Flask, alerting basique et visualisation. Conçu pour diagnostiquer et automatiser des actions préventives sur environnement Linux.",
+    "tags": "Python, Monitoring, Réseau, Linux, Flask",
+    "img": "/ser.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/Local_server_monitoring"
+  },
+  {
+    "title": "Compilateur / Assembleur",
+    "slug": "compilateur-assembleur",
+    "description": " Compilateur éducatif traduisant un langage impératif inspiré de Pascal en assembleur x86_64. Il gère les boucles FOR, la génération d’étiquettes, les sauts conditionnels et la production de code optimisé..",
+    "tags": "Compilateur, Assembleur, x86_64, C, Operations arithmétiques",
+    "img": "/ass.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/compiler_assembly"
+  },
+  {
+  "title": "ChatApp sécurisée",
+  "slug": "chatapp-securisee",
+  "description": "Application de messagerie sécurisée développée en Python avec Kivy, intégrant un chiffrement des messages et une interface simple et fluide.",
+  "tags": "Python, Kivy, TCP, Cryptographie, Réseau",
+  "img": "/py.jpg",
+  "screenshots": ["/"],
+  "repo": "https://github.com/rachelleichi/chat_app_kivy"
+ },
+  {
+    "title": "Jeu Puissance 4",
+    "slug": "jeu-puissance4-cpp",
+    "description": "Implémentation complète du jeu Puissance 4 en C++ : moteur de jeu, gestion de l'état, IA de l'adversaire (algorithme Minimax avec élagage), et gestion fine de la mémoire. Optimisé pour la robustesse et l'efficacité algorithmique.",
+    "tags": "C++, Algorithmique, POO, IA, Minmax",
+    "img": "/p4.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/puissance4_cpp"
+  },
+  {
     "title": "Entreps - Simulation d'entreprise",
     "slug": "entreps",
     "description": "Simulation pédagogique de création et gestion d'entreprise intégrant des mécanismes économiques (flux de trésorerie, production, stratégie marketing), analyse SWOT et expérimentation de stratégies de gestion.",
@@ -36,22 +81,22 @@
     "repo": "https://github.com/rachelleichi?tab=repositories"
   },
   {
+    "title": "Implémentation d’algorithmes en Julia",
+    "slug": "algorithmes-julia",
+    "description": "Implémentation d'algorithmes algorithmiques et d'optimisation en Julia : salesman, partitionnement et premières expérimentations en apprentissage automatique sur petits jeux de données. Focalisé sur performances et clarté de code.",
+    "tags": "Julia, Algorithmique, Optimisation",
+    "img": "/julia.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/julia_linear_prog"
+  },
+  {
     "title": "Conception d'un centre de données (Tier 2)",
     "slug": "datacenter-tier2",
     "description": "Projet d'ingénierie pour la conception d'un centre de données Tier 2 : dimensionnement énergétique, systèmes de refroidissement, topologie réseau, et stratégie de redondance N+1. Livrables : schémas, calculs de charge, et recommandations pour la disponibilité et la maintenance.",
-    "tags": "Infrastructure, Réseau, Gestion d'énergie, Redondance, Conception",
+    "tags": "Gestion de projet, Infrastructure, Réseau, Gestion d'énergie, Redondance",
     "img": "/don.jpg",
     "screenshots": ["/"],
     "repo": "https://github.com/rachelleichi?tab=repositories"
-  },
-  {
-    "title": "Système IoT de mesure et détection",
-    "slug": "iot-mesure-detection",
-    "description": "Projet de stage intégrant ESP32, Raspberry Pi et ESP32-CAM pour la collecte de mesures (luminosité VEML7700, courant ACS712, détection de présence via capteurs PIR et YOLOv8). Architecture : acquisition embarquée, transmission HTTP vers un serveur Flask, stockage MariaDB et visualisation Grafana. Focus sur fiabilité et comparatif de performances IA.",
-    "tags": "IoT, ESP32, Raspberry Pi, Flask, Grafana, MariaDB, YOLOv8, VEML7700, ACS712",
-    "img": "/iot.jpg",
-    "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/esp32-raspberry-esp32cam-veml7700-ASC712-STM32"
   },
   {
     "title": "Détection de chiffres par IA (en cours)",
@@ -79,50 +124,5 @@
     "img": "/agr.jpg",
     "screenshots": ["/"],
     "repo": "https://github.com/rachelleichi/ia_prediction_agricole"
-  },
-  {
-    "title": "Implémentation d’algorithmes en Julia",
-    "slug": "algorithmes-julia",
-    "description": "Implémentation d'algorithmes algorithmiques et d'optimisation en Julia : salesman, partitionnement et premières expérimentations en apprentissage automatique sur petits jeux de données. Focalisé sur performances et clarté de code.",
-    "tags": "Julia, Algorithmique, Optimisation",
-    "img": "/julia.jpg",
-    "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/julia_linear_prog"
-  },
-  {
-    "title": "Monitoring de serveurs local",
-    "slug": "monitoring-serveurs-local",
-    "description": "Solution locale de supervision pour serveurs : collecte métriques CPU/mémoire/réseau, interface web Flask, alerting basique et visualisation. Conçu pour diagnostiquer et automatiser des actions préventives sur environnement Linux.",
-    "tags": "Python, Monitoring, Réseau, Linux, Flask",
-    "img": "/ser.jpg",
-    "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/Local_server_monitoring"
-  },
-  {
-    "title": "Compilateur / Assembleur",
-    "slug": "compilateur-assembleur",
-    "description": " Compilateur éducatif traduisant un langage impératif inspiré de Pascal en assembleur x86_64. Il gère les boucles FOR, la génération d’étiquettes, les sauts conditionnels et la production de code optimisé..",
-    "tags": "Compilateur, Assembleur, x86_64, C, Operations arithmétiques",
-    "img": "/ass.jpg",
-    "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/compiler_assembly"
-  },
-  {
-    "title": "Pentest & audit de sécurité (Kali Linux)",
-    "slug": "pentest-kali",
-    "description": "Projet d'audit d'infrastructure et d'application basé sur Kali Linux : reconnaissance passive/active, énumération, exploitation contrôlée, post-exploitation et rédaction d'un rapport technique complet (vulnérabilités, preuves, recommandations et plan de remédiation). Livrables : checks list, rapports ST0/privilege escalation reproduit, et playbook de remediation.",
-    "tags": "Kali Linux, Pentesting, Nmap, Metasploit, Burp Suite, OWASP, Rapport de sécurité",
-    "img": "/pen.jpg",
-    "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/pentest_kali"
-  },
-  {
-  "title": "ChatApp sécurisée",
-  "slug": "chatapp-securisee",
-  "description": "Application de messagerie sécurisée développée en Python avec Kivy, intégrant un chiffrement des messages et une interface simple et fluide.",
-  "tags": "Python, Kivy, TCP, Cryptographie, Réseau",
-  "img": "/py.jpg",
-  "screenshots": ["/"],
-  "repo": "https://github.com/rachelleichi/chat_app_kivy"
-}
+  }
 ]

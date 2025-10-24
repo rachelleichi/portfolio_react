@@ -67,12 +67,12 @@ const Hero: React.FC = () => {
                 {link}
               </a>
             ))}
-            <div className="flex items-center gap-4 mt-auto">
+            {/* <div className="flex items-center gap-4 mt-auto">
               <button className="px-3 py-1 border border-accent1 rounded text-accent1 hover:bg-accent1 hover:text-bg1 transition">
                 FR
               </button>
               <div className="text-lg text-accent1">🇬🇧</div>
-            </div>
+            </div> */}
           </motion.nav>
         )}
       </AnimatePresence>
