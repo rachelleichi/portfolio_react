@@ -18,6 +18,15 @@
     "repo": "https://github.com/rachelleichi/portfolio_react"
   },
   {
+    "title": "Visualiseur d’instructions CPU",
+    "slug": "visualiseur-instructions-cpu",
+    "description": "Projet éducatif en C++ permettant de visualiser l'exécution d'instructions assembleur x86_64 sur un CPU simulé : affichage des registres, mémoire et flux d'exécution étape par étape. Conçu pour l'apprentissage et le débogage des programmes bas-niveau.",
+    "tags": "C++, Assembleur, CPU, Visualisation, Éducation",
+    "img": "/ass_1.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/cpu_visualizer"
+  },
+  {
     "title": "Système IoT de mesure et détection",
     "slug": "iot-mesure-detection",
     "description": "Projet de stage intégrant ESP32, Raspberry Pi et ESP32-CAM pour la collecte de mesures (luminosité VEML7700, courant ACS712, détection de présence via capteurs PIR et YOLOv8). Architecture : acquisition embarquée, transmission HTTP vers un serveur Flask, stockage MariaDB et visualisation Grafana. Focus sur fiabilité et comparatif de performances IA.",
