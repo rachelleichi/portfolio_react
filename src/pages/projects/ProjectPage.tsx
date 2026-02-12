@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { useDataById } from '../../hooks/useData'
+import { loadProjectBySlug, preloadData } from '../../services/dataService'
 
 interface Project {
   title: string
@@ -9,23 +11,39 @@ interface Project {
   img: string
   screenshots: string[]
   repo: string
+  showRepo?: boolean
 }
 
 const ProjectPage: React.FC = () => {
-  const { slug } = useParams()
-  const [project, setProject] = useState<Project | null>(null)
+  const { slug } = useParams<{ slug: string }>()
+  const { data: project, loading, error } = useDataById(
+    (id) => loadProjectBySlug(id),
+    slug
+  )
 
-  useEffect(() => {
-    fetch('/data/projects.json')
-      .then(res => res.json())
-      .then((data) => {
-        const found = data.find((p: any) => p.slug === slug)
-        setProject(found || null)
-      })
-      .catch(err => console.error('Error loading project:', err))
-  }, [slug])
+  // Preload experiences for smooth transitions
+  React.useEffect(() => {
+    preloadData('/data/experiences.json')
+  }, [])
 
-  if (!project) return <p className="text-center text-white mt-20">Loading project...</p>
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-bg1">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-mustard"></div>
+      </div>
+    )
+  }
+
+  if (error || !project) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-bg1 text-white">
+        <p className="text-xl mb-4">Project not found</p>
+        <Link to="/#projects" className="text-accent1 hover:underline">
+          ← Back to Projects
+        </Link>
+      </div>
+    )
+  }
 
   // Only keep valid screenshots (ignore "/")
   const validScreenshots = project.screenshots.filter(src => src !== '/')
@@ -56,14 +74,16 @@ const ProjectPage: React.FC = () => {
         </div>
 
         {/* GitHub button */}
-        <a
-          href={project.repo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-mustard text-bg1 font-semibold rounded-full hover:bg-mustard/80 mb-8 transition"
-        >
-          GitHub
-        </a>
+        {project.repo && project.showRepo !== false && (
+          <a
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-mustard text-bg1 font-semibold rounded-full hover:bg-mustard/80 mb-8 transition"
+          >
+            GitHub
+          </a>
+        )}
 
         {/* Screenshots grid */}
         {validScreenshots.length > 0 && (

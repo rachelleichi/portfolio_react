@@ -1,33 +1,39 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
-
-interface Experience {
-  title: string
-  slug: string
-  company: string
-  role: string
-  duration: string
-  description: string
-  skills: string
-  screenshots?: string[]
-}
+import { useDataById } from '../../hooks/useData'
+import { loadExperienceBySlug, preloadData } from '../../services/dataService'
 
 const ExperiencePage: React.FC = () => {
-  const { slug } = useParams()
-  const [experience, setExperience] = useState<Experience | null>(null)
+  const { slug } = useParams<{ slug: string }>()
+  const { data: experience, loading, error } = useDataById(
+    (id) => loadExperienceBySlug(id),
+    slug
+  )
 
-  useEffect(() => {
-    fetch('/data/experiences.json')
-      .then(res => res.json())
-      .then(data => {
-        const found = data.find((e: Experience) => e.slug === slug)
-        setExperience(found || null)
-      })
-      .catch(err => console.error('Error loading experience:', err))
-  }, [slug])
+  // Preload projects for smooth transitions
+  React.useEffect(() => {
+    preloadData('/data/projects.json')
+  }, [])
 
-  if (!experience) return <p className="text-center text-white mt-20">Loading experience...</p>
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-bg1">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-mustard"></div>
+      </div>
+    )
+  }
+
+  if (error || !experience) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-bg1 text-white">
+        <p className="text-xl mb-4">Experience not found</p>
+        <Link to="/#experience" className="text-accent1 hover:underline">
+          ← Back to Experience
+        </Link>
+      </div>
+    )
+  }
 
   // Filter valid screenshots (ignore "/")
   const validScreenshots = experience.screenshots?.filter(src => src !== '/') || []

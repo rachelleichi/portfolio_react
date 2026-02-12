@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome",
+    "title": "Meflah Rachel",
+    "subtitle": "Cybersecurity Student",
+    "cta": "Contact"
+  },
+  "bio": {
+    "title": "Bio",
+    "description": "I'm Rachel Meflah, a curious mind drawn to the hidden layers of technology. From code to circuits, I love exploring how systems think — and how to make them stronger, smarter, and more humane.",
+    "resume": "Download my Resume"
+  },
+  "projects": {
+    "title": "Projects",
+    "repository": "Repository",
+    "exploreMore": "Explore More"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "certifications": {
+    "title": "Certifications"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "followMe": "Follow me"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Bienvenue",
+    "title": "Meflah Rachel",
+    "subtitle": "Étudiante en cybersécurité",
+    "cta": "Contact"
+  },
+  "bio": {
+    "title": "Bio",
+    "description": "Je suis Rachel Meflah, une esprit curieux attirée par les couches cachées de la technologie. Du code aux circuits, j'aime explorer comment les systèmes fonctionnent — et comment les rendre plus forts, plus intelligents et plus humains.",
+    "resume": "Télécharger mon CV"
+  },
+  "projects": {
+    "title": "Projets",
+    "repository": "Dépôt",
+    "exploreMore": "Explorez Plus"
+  },
+  "education": {
+    "title": "Éducation"
+  },
+  "experience": {
+    "title": "Expérience"
+  },
+  "skills": {
+    "title": "Compétences"
+  },
+  "certifications": {
+    "title": "Certifications"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi. Réessayez."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "followMe": "Me suivre"
+  }
+}

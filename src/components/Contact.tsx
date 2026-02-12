@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation()
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,69 +29,69 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section
-      id="contact"
-      className="relative py-16 pb-40 sm:pb-48 md:pb-60 text-[var(--mint1)] overflow-hidden"
-    >
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-start px-6">
-        {/* Left side - Contact Form */}
-        <form
-          className="space-y-6 w-full max-w-md"
-          onSubmit={handleSubmit}
-        >
-          <h3 className="text-3xl font-heading mb-2 text-[var(--accent1)]">Contact</h3>
+    <section id="contact" className="relative py-28 pb-40 text-[var(--mint1)] overflow-hidden bg-bg1">
+      <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center px-6 max-w-6xl">
+        
+        {/* Left side - Restored Contact Form */}
+        <form className="space-y-6 w-full" onSubmit={handleSubmit}>
+          <h3 className="text-4xl font-heading mb-6 text-[var(--accent1)] font-bold uppercase tracking-tighter">
+            {t('contact.title')}
+          </h3>
 
-          <input
-            type="text"
-            name="name"
-            className="w-full p-2 border-b border-mint1 bg-transparent focus:outline-none focus:border-accent1"
-            placeholder="Nom"
-            required
-          />
+          <div className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              className="w-full p-3 bg-transparent border-b border-mint1 focus:outline-none focus:border-accent1 transition-colors text-white"
+              placeholder={t('contact.name')}
+              required
+            />
 
-          <input
-            type="email"
-            name="email"
-            className="w-full p-2 border-b border-mint1 bg-transparent focus:outline-none focus:border-accent1"
-            placeholder="Email"
-            required
-          />
+            <input
+              type="email"
+              name="email"
+              className="w-full p-3 bg-transparent border-b border-mint1 focus:outline-none focus:border-accent1 transition-colors text-white"
+              placeholder={t('contact.email')}
+              required
+            />
 
-          <textarea
-            name="message"
-            className="w-full p-2 border-b border-mint1 bg-transparent focus:outline-none focus:border-accent1"
-            rows={4}
-            placeholder="Message"
-            required
-          />
+            <textarea
+              name="message"
+              className="w-full p-3 bg-transparent border-b border-mint1 focus:outline-none focus:border-accent1 transition-colors text-white"
+              rows={4}
+              placeholder={t('contact.message')}
+              required
+            />
+          </div>
 
           <button
             type="submit"
-            className="px-14 py-3 bg-mint1 text-bg1 rounded hover:bg-mustard/70 hover:text-bg1 transition"
+            className="px-14 py-3 bg-mint1 text-bg1 rounded-lg font-bold uppercase tracking-widest hover:bg-mustard transition shadow-lg"
           >
-            Envoyer
+            {t('contact.send')}
           </button>
 
-          {status === 'success' && (
-            <p className="text-green-500 mt-2">Message envoyé avec succès !</p>
-          )}
-          {status === 'error' && (
-            <p className="text-red-500 mt-2">Erreur lors de l'envoi. Réessayez.</p>
-          )}
+          {status === 'success' && <p className="text-green-500 mt-4">{t('contact.success')}</p>}
+          {status === 'error' && <p className="text-red-500 mt-4">{t('contact.error')}</p>}
         </form>
 
-        {/* Right side - Contact Info */}
-        <div className="flex flex-col justify-start items-center text-center relative md:translate-x-14">
-          <h4 className="text-2xl font-heading text-[var(--accent1)] mb-2">Coordonnées</h4>
-          <p>5 rue pierre leca, 13003 Marseille</p>
-          <p>+33 744541045</p>
-          <p>meflahrachel@gmail.com</p>
-
-          <img
-            src="/footer.png"
-            alt="footer decoration"
-            className="mt-6 w-32 sm:w-44 md:w-60 lg:w-72 opacity-80 pointer-events-none select-none"
-          />
+        {/* Right side - Restored Info Layout */}
+        <div className="flex flex-col justify-start items-center text-center relative md:translate-x-14 space-y-6">
+          <div>
+            <h4 className="text-2xl font-heading text-[var(--accent1)] mb-2 uppercase font-bold tracking-tight">Coordonnées</h4>
+            <div className="space-y-2 text-lg">
+              <p>5 rue pierre leca, 13003 Marseille</p>
+              <p>+33 7 44 54 10 45</p>
+              <p className="text-mustard font-semibold">meflahrachel@gmail.com</p>
+            </div>
+          </div>
+          
+          {/* FIXED: Removed border-t and pt-8 classes to remove the line */}
+          <div className="w-full max-w-xs mx-auto">
+             <div className="flex items-center justify-center gap-2">
+               {/* Content for system status or other info can go here */}
+             </div>
+          </div>
         </div>
       </div>
     </section>

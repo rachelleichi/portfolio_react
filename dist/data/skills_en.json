@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Cybersecurity",
+    "icon": "/cyber.png",
+    "details": [
+      "Firewalling (Stormshield, iptables)",
+      "IDS/IPS",
+      "SIEM (log analysis)",
+      "Penetration testing (Kali Linux)",
+      "Vulnerabilities and patching",
+      "VPN (IPsec, GRE, MPLS)",
+      "Network and endpoint security",
+      "Malware analysis"
+    ]
+  },
+  {
+    "name": "Networking",
+    "icon": "/reseau.png",
+    "details": [
+      "OSI/TCP-IP model",
+      "VLAN, Static and dynamic routing (RIP, OSPF, EIGRP, BGP)",
+      "Wi-Fi, SNMP, Fiber optic",
+      "NAT, HSRP, EtherChannel",
+      "Wireshark / Packet analysis",
+      "Cisco switch and router configuration"
+    ]
+  },
+  {
+    "name": "System Administration",
+    "icon": "/admin.png",
+    "details": [
+      "Linux (Bash, systemd, permissions)",
+      "Windows Server (GPO, Active Directory)",
+      "User and service management",
+      "Virtualization (VMware, VirtualBox)",
+      "Apache, Nginx, LDAP",
+      "Bash & PowerShell scripts"
+    ]
+  },
+  {
+    "name": "Programming",
+    "icon": "/progra.png",
+    "details": [
+      "Python (security, automation, Flask, Kivy)",
+      "C / C++ (low-level, algorithms)",
+      "Java (OOP, projects)",
+      "Native JavaScript",
+      "VHDL (FPGA)",
+      "Git / Version control"
+    ]
+  },
+  {
+    "name": "Web Development",
+    "icon": "/dev.png",
+    "details": [
+      "HTML5 / CSS3 / JavaScript",
+      "Responsive design",
+      "Flask & Jinja2",
+      "CSS/JS animations",
+      "Simple and fluid UI/UX design",
+      "JSON, PHP, REST API",
+      "Frameworks: React, Tailwind CSS",
+      "MySQL, MariaDB",
+      "SQL design and queries"
+    ]
+  },
+  {
+    "name": "Embedded Systems",
+    "icon": "/embeded.png",
+    "details": [
+      "Microcontrollers Arduino, STM32, ESP32",
+      "Raspberry Pi",
+      "Serial/I2C/SPI communication",
+      "Sensors / Actuators",
+      "VHDL on Intel FPGA",
+      "Memory/code optimization"
+    ]
+  }
+]

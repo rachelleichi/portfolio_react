@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Vehicle Fleet Management",
+    "slug": "vehicle-fleet-management",
+    "description": "Object-oriented Java application for complete vehicle fleet management: customer management, sales and rental operations, advanced search, and data persistence through JSON serialization/deserialization. Designed to be extensible and testable (MVC architecture).",
+    "tags": "Java, JSON, OOP, Data Management",
+    "img": "/java.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/gestion_parc_automobile",
+    "showRepo": true
+  },
+  {
+    "title": "Personal Portfolio",
+    "slug": "portfolio",
+    "description": "Portfolio website developed in React and Tailwind, integrating Framer Motion animations and performance-oriented UX. Showcasing projects, interactive CV, and smooth navigation system tailored for recruiters and technical demonstrations.",
+    "tags": "React, Tailwind, Framer Motion, UI/UX, Frontend",
+    "img": "/port.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/portfolio_react",
+    "showRepo": true
+  },
+  {
+    "title": "CPU Instruction Visualizer",
+    "slug": "cpu-instruction-visualizer",
+    "description": "Educational C++ project enabling visualization of x86_64 assembly instruction execution on a simulated CPU: display of registers, memory, and execution flow step-by-step. Designed for learning and debugging low-level programs.",
+    "tags": "C++, Assembly, CPU, Visualization, Education",
+    "img": "/ass_1.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/cpu_visualizer",
+    "showRepo": true
+  },
+  {
+    "title": "IoT Measurement and Detection System",
+    "slug": "iot-measurement-detection",
+    "description": "Internship project integrating ESP32, Raspberry Pi, and ESP32-CAM for data collection (VEML7700 brightness, ACS712 current, presence detection via PIR and YOLOv8 sensors). Architecture: embedded acquisition, HTTP transmission to Flask server, MariaDB storage, and Grafana visualization. Focus on reliability and AI performance comparison.",
+    "tags": "IoT, YOLOv8, ESP32, Raspberry Pi, Flask, Grafana, MariaDB, VEML7700, ACS712",
+    "img": "/iot.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/esp32-raspberry-esp32cam-veml7700-ASC712-STM32",
+    "showRepo": true
+  },
+  {
+    "title": "Penetration Testing & Security Audit (Kali Linux)",
+    "slug": "pentest-kali",
+    "description": "Infrastructure and application audit project based on Kali Linux: passive/active reconnaissance, enumeration, controlled exploitation, post-exploitation, and comprehensive technical report writing (vulnerabilities, proofs, recommendations, and remediation plan). Deliverables: checklists, ST0 reports/privilege escalation reproduced, and remediation playbook.",
+    "tags": "Kali Linux, Pentesting, Nmap, Metasploit, Burp Suite, OWASP, Security Report",
+    "img": "/pen.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/pentest_kali",
+    "showRepo": false
+  },
+  {
+    "title": "Local Server Monitoring",
+    "slug": "local-server-monitoring",
+    "description": "Local supervision solution for servers: collecting CPU/memory/network metrics, Flask web interface, basic alerting, and visualization. Designed to diagnose and automate preventive actions on Linux environments.",
+    "tags": "Python, Monitoring, Networking, Linux, Flask",
+    "img": "/ser.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/Local_server_monitoring",
+    "showRepo": false
+  },
+  {
+    "title": "Compiler / Assembler",
+    "slug": "compiler-assembler",
+    "description": "Educational compiler translating an imperative language inspired by Pascal into x86_64 assembly. Handles FOR loops, label generation, conditional jumps, and produces optimized code.",
+    "tags": "Compiler, Assembly, x86_64, C, Arithmetic Operations",
+    "img": "/ass.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/compiler_assembly",
+    "showRepo": true
+  },
+  {
+    "title": "Secure ChatApp",
+    "slug": "secure-chatapp",
+    "description": "Secure messaging application developed in Python with Kivy, integrating message encryption and a simple, fluid interface.",
+    "tags": "Python, Kivy, TCP, Cryptography, Networking",
+    "img": "/py.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/chat_app_kivy",
+    "showRepo": true
+  },
+  {
+    "title": "Connect Four Game",
+    "slug": "connect-four-game",
+    "description": "Complete Connect Four game implementation in C++: game engine, state management, opponent AI (Minimax algorithm with pruning), and fine memory management. Optimized for robustness and algorithmic efficiency.",
+    "tags": "C++, Algorithms, OOP, AI, Minimax",
+    "img": "/p4.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/puissance4_cpp",
+    "showRepo": true
+  },
+  {
+    "title": "Entreps - Business Simulation",
+    "slug": "entreps-business-simulation",
+    "description": "Educational business creation and management simulation integrating economic mechanisms (cash flow, production, marketing strategy), SWOT analysis, and experimentation with management strategies.",
+    "tags": "Simulation, Economics, Project Management, Pedagogy",
+    "img": "/en.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi?tab=repositories",
+    "showRepo": false
+  },
+  {
+    "title": "Algorithm Implementation in Julia",
+    "slug": "algorithms-julia",
+    "description": "Implementation of algorithmic and optimization algorithms in Julia: traveling salesman, partitioning, and early experiments in machine learning on small datasets. Focused on performance and code clarity.",
+    "tags": "Julia, Algorithms, Optimization",
+    "img": "/julia.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/julia_linear_prog",
+    "showRepo": true
+  },
+  {
+    "title": "Data Center Design (Tier 2)",
+    "slug": "datacenter-tier2",
+    "description": "Engineering project for designing a Tier 2 data center: energy sizing, cooling systems, network topology, and N+1 redundancy strategy. Deliverables: diagrams, load calculations, and recommendations for availability and maintenance.",
+    "tags": "Project Management, Infrastructure, Networking, Energy Management, Redundancy",
+    "img": "/don.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi?tab=repositories",
+    "showRepo": false
+  },
+  {
+    "title": "Digit Detection by AI ",
+    "slug": "ai-digit-detection",
+    "description": "Development of a convolutional neural network (CNN) for digit recognition on images: data collection and augmentation, supervised training, evaluation (precision/recall), and lightweight deployment for inference testing.",
+    "tags": "Python, Deep Learning, CNN, MINST",
+    "img": "/det.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/ia_detection_chiffres",
+    "showRepo": true
+  },
+  {
+    "title": "Intelligent Chatbot (In Progress)",
+    "slug": "chatbot-ai",
+    "description": "Conversational agent built in Python combining NLP and machine learning techniques: preprocessing pipeline, language model training for intent classification, and dialogue module integration. Goal: simple and extensible contextual assistant.",
+    "tags": "Python, NLP, Chatbot, Machine Learning",
+    "img": "/chat.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/chatbot_ia",
+    "showRepo": false
+  },
+  {
+    "title": "Agricultural Yield Prediction ",
+    "slug": "ai-agricultural-yield",
+    "description": "Predictive model for crop yield developed from meteorological and pedological data: feature engineering, model testing (regression, trees, ensemble models), and cross-validation. Deliverables: reproducible pipeline and analysis notebook.",
+    "tags": "Data Science, Python, AI, Agriculture, Modeling",
+    "img": "/agr.jpg",
+    "screenshots": ["/"],
+    "repo": "https://github.com/rachelleichi/ia_prediction_agricole",
+    "showRepo": true
+  }
+]

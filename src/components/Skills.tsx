@@ -1,80 +1,59 @@
-import React, { useEffect, useState } from 'react'
-
-interface Skill {
-  name: string
-  icon: string
-  details: string[]
-}
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useData } from '../hooks/useData'
+import { loadSkills } from '../services/dataService'
 
 const Skills: React.FC = () => {
-  const [skills, setSkills] = useState<Skill[]>([])
+  const { t } = useTranslation()
+  const { data: skills = [], loading } = useData(loadSkills, [])
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
-  useEffect(() => {
-    fetch('/data/skills.json')
-      .then(res => res.json())
-      .then(data => setSkills(data))
-      .catch(err => console.error('Error loading skills:', err))
-  }, [])
-
-  const handleClick = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index)
-  }
-
   return (
-    <section
-      id="compétences"
-      className="w-full py-16 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-0"
-    >
-      {/* Title */}
-      <h3 className="text-4xl sm:text-4xl md:text-5xl font-heading text-[var(--mint1)] mb-14 text-center">
-        Compétences
-      </h3>
-
-      {/* Grid icons */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-4 justify-items-center">
-        {skills.map((skill, index) => (
-          <div
-            key={skill.name}
-            className="relative flex flex-col items-center group cursor-pointer"
-          >
-            {/* Cercle avec icône cliquable */}
-            <button
-              onClick={() => handleClick(index)}
-              className="skill-icon focus:outline-none w-42 h-42 sm:w-48 sm:h-48 md:w-52 md:h-52 mb-4 flex items-center justify-center rounded-full bg-[var(--mint1)] overflow-hidden transform transition-transform duration-300 group-hover:scale-110"
-            >
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
-              />
-            </button>
-
-            {/* Titre */}
-            <p className="font-heading text-[var(--accent1)] text-base sm:text-lg md:text-xl mb-2 text-center">
-              {skill.name}
-            </p>
-
-            {/* Overlay détails */}
-            <div
-              className={`
-                absolute top-full left-1/2 transform -translate-x-1/2 mt-2 
-                w-36 sm:w-44 md:w-48 bg-mustard/90 text-white 
-                p-2 sm:p-3 rounded shadow-lg text-left
-                transition-opacity duration-300 ease-in-out pointer-events-none
-                ${activeIndex === index ? 'opacity-100 pointer-events-auto' : 'opacity-0 md:group-hover:opacity-100'}
-                z-50
-              `}
-            >
-              <ul className="text-xs sm:text-sm md:text-base">
-                {skill.details.map((d, i) => (
-                  <li key={i}>• {d}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
+    <section id="compétences" className="w-full py-20 px-4 md:px-6 max-w-6xl mx-auto">
+      <div className="text-center mb-16">
+        <h3 className="text-3xl md:text-5xl font-heading text-[var(--mint1)] font-bold uppercase tracking-widest">
+          {t('skills.title')}
+        </h3>
+        <div className="h-1 w-12 bg-mustard mx-auto mt-4 rounded-full" />
       </div>
+
+      {loading ? (
+        <div className="flex justify-center"><div className="animate-spin rounded-full h-10 w-10 border-b-2 border-mustard"></div></div>
+      ) : (
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
+          {skills.map((skill, index) => (
+            <div key={skill.name} className="relative group flex flex-col items-center">
+              <button
+                onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+                className="skill-lens"
+              >
+                <img 
+                  src={skill.icon} 
+                  alt={skill.name} 
+                  className="skill-icon-img" 
+                />
+              </button>
+
+              <h4 className="mt-4 md:mt-6 font-heading text-sm md:text-xl text-[var(--accent1)] font-bold tracking-widest uppercase text-center">
+                {skill.name}
+              </h4>
+
+              <div className={`
+                absolute top-[80%] left-1/2 -translate-x-1/2 z-50 mt-4
+                w-48 md:w-64 bg-[#0a0a0a]/95 border border-white/10 rounded-xl p-4 md:p-6 backdrop-blur-xl
+                transition-all duration-300 transform
+                ${activeIndex === index ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}
+              `}>
+                <ul className="space-y-1 md:space-y-2 font-mono text-[10px] md:text-[11px] text-mint1">
+                  {skill.details.map((d, i) => (
+                    <li key={i} className="flex gap-2"><span className="text-mustard/60">❯</span> {d}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   )
 }

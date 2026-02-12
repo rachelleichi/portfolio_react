@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Volunteering - AFEV",
+    "slug": "volunteering-afev",
+    "company": "AFEV Association",
+    "role": "Volunteer in Educational Support",
+    "duration": "September 2022 - Present",
+    "description": "Weekly support for young people facing academic and social difficulties through individualized mentoring and collective educational activities. This volunteering develops interpersonal, listening, and pedagogical skills while contributing to combating educational inequality.",
+    "skills": "Pedagogy, Communication, Empathy, Teamwork",
+    "img": "afev.png",
+    "screenshots": ["/"]
+  },
+  {
+    "title": "Civic Service - UNIS-CITÉ",
+    "slug": "civic-service-uniscite",
+    "company": "UNIS-CITÉ Association, Avignon",
+    "role": "Volunteer in Digital Inclusion",
+    "duration": "October 2023 - July 2024",
+    "description": "Participation in a civic service program aimed at reducing the digital divide for seniors. Conducted collective workshops and personalized support to help users become autonomous in digital usage. Developed skills in animation, pedagogy, and social project management.",
+    "skills": "Digital Inclusion, Animation, Service Mindset, Autonomy",
+    "img": "num.jpeg",
+    "screenshots": ["/"]
+  },
+  {
+    "title": "Volunteering - Educational Games for Kindergarten",
+    "slug": "educational-games-kindergarten",
+    "company": "Kindergarten Schools of Marseille",
+    "role": "Volunteer",
+    "duration": "October 2024 - December 2024",
+    "description": "Volunteer participation in a research project in kindergarten school, aiming to assess children's math skills through educational games. Designed and tested interactive mini-games promoting number recognition and mathematical logic. Collaborated with teachers and researchers.",
+    "skills": "Educational Games, Pedagogy, Interdisciplinary Work",
+    "img": "mat.jpeg",
+    "screenshots": ["/"]
+  },
+  {
+    "title": "IoT Internship - IUT Saint-Jérôme",
+    "slug": "iot-internship",
+    "company": "IUT Aix-Marseille (Saint-Jérôme Campus)",
+    "role": "IoT Intern",
+    "duration": "April 2025 - June 2025",
+    "description": "Designed a complete IoT system for sensor data collection (brightness, electrical intensity, presence detection). Developed two Flask servers for real-time data visualization and transmission, integration with Grafana and MariaDB, backup automation and alerting, and project documentation on GitHub. Experience combining electronics, programming, and system administration.",
+    "skills": "IoT, Python (Flask), Raspberry Pi, MariaDB, Grafana, ESP32, STM32, Autonomy, Automation, Documentation",
+    "img": "cam.jpg",
+    "screenshots": ["/"]
+  }
+]

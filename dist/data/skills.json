@@ -2,31 +2,78 @@
   {
     "name": "Cybersécurité",
     "icon": "/cyber.png",
-    "details": ["Sécurité réseau", "Cryptographie", "Tests d’intrusion"]
+    "details": [
+      "Firewalling (Stormshield, iptables)",
+      "IDS/IPS",
+      "SIEM (analyse de logs)",
+      "Tests d’intrusion (Kali Linux)",
+      "Vulnérabilités et patching",
+      "VPN (IPsec, GRE, MPLS)",
+      "Sécurité réseau et endpoint",
+      "Analyse de malware"
+    ]
   },
   {
     "name": "Réseaux",
     "icon": "/reseau.png",
-    "details": ["CCNA", "Configuration routeurs", "Switches"]
+    "details": [
+      "Modèle OSI/TCP-IP",
+      "VLAN, Routage statique et dynamique (RIP, OSPF, EIGRP, BGP)",
+      "Wi-Fi, SNMP, Fibre optique",
+      "NAT, HSRP, EtherChannel",
+      "Wireshark / Analyse de paquets",
+      "Configuration de switches et routeurs Cisco"
+    ]
   },
   {
     "name": "Administration systèmes",
     "icon": "/admin.png",
-    "details": ["Linux", "Windows Server", "Scripting"]
+    "details": [
+      "Linux (Bash, systemd, permissions)",
+      "Windows Server (GPO, Active Directory)",
+      "Gestion utilisateurs et services",
+      "Virtualisation (VMware, VirtualBox)",
+      "Apache, Nginx, LDAP",
+      "Scripts Bash & PowerShell"
+    ]
   },
   {
     "name": "Programmation",
     "icon": "/progra.png",
-    "details": ["Python", "C++", "Java"]
+    "details": [
+      "Python (sécurité, automatisation, Flask, Kivy)",
+      "C / C++ (bas niveau, algorithmes)",
+      "Java (POO, projets)",
+      "JavaScript natif",
+      "VHDL (FPGA)",
+      "Git / Gestion de versions"
+    ]
   },
   {
     "name": "Développement web",
     "icon": "/dev.png",
-    "details": ["React", "Flask", "Tailwind", "REST API"]
+    "details": [
+      "HTML5 / CSS3 / JavaScript",
+      "Responsive design",
+      "Flask & Jinja2",
+      "Animations CSS/JS",
+      "Conception UI/UX simple et fluide",
+      "JSON, PHP, REST API",
+      "Frameworks : React, Tailwind CSS",
+      "MySQL , MariaDB",
+      "Conception et requêtes SQL"
+    ]
   },
   {
     "name": "Systèmes embarqués",
     "icon": "/embeded.png",
-    "details": ["Arduino", "Raspberry Pi", "ESP32"]
+    "details": [
+      "Microcontrôleurs Arduino, STM32, ESP32",
+      "Raspberry Pi",
+      "Communication série/I2C/SPI",
+      "Capteurs / Actionneurs",
+      "VHDL sur FPGA Intel",
+      "Optimisation mémoire/code"
+    ]
   }
 ]

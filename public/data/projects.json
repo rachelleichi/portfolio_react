@@ -6,7 +6,8 @@
     "tags": "Java, JSON, POO, Gestion de données",
     "img": "/java.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/gestion_parc_automobile"
+    "repo": "https://github.com/rachelleichi/gestion_parc_automobile",
+    "showRepo": true
   },
   {
     "title": "Portfolio personnel",
@@ -15,7 +16,8 @@
     "tags": "React, Tailwind, Framer Motion, UI/UX, Frontend",
     "img": "/port.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/portfolio_react"
+    "repo": "https://github.com/rachelleichi/portfolio_react",
+    "showRepo": true 
   },
   {
     "title": "Visualiseur d’instructions CPU",
@@ -24,7 +26,8 @@
     "tags": "C++, Assembleur, CPU, Visualisation, Éducation",
     "img": "/ass_1.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/cpu_visualizer"
+    "repo": "https://github.com/rachelleichi/cpu_visualizer",
+    "showRepo": true
   },
   {
     "title": "Système IoT de mesure et détection",
@@ -33,7 +36,8 @@
     "tags": "IoT, YOLOv8, ESP32, Raspberry Pi, Flask, Grafana, MariaDB, VEML7700, ACS712",
     "img": "/iot.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/esp32-raspberry-esp32cam-veml7700-ASC712-STM32"
+    "repo": "https://github.com/rachelleichi/esp32-raspberry-esp32cam-veml7700-ASC712-STM32",
+    "showRepo": true
   },
   {
     "title": "Pentest & audit de sécurité (Kali Linux)",
@@ -42,7 +46,8 @@
     "tags": "Kali Linux, Pentesting, Nmap, Metasploit, Burp Suite, OWASP, Rapport de sécurité",
     "img": "/pen.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/pentest_kali"
+    "repo": "https://github.com/rachelleichi/pentest_kali",
+    "showRepo": false
   },
    {
     "title": "Monitoring de serveurs local",
@@ -51,7 +56,8 @@
     "tags": "Python, Monitoring, Réseau, Linux, Flask",
     "img": "/ser.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/Local_server_monitoring"
+    "repo": "https://github.com/rachelleichi/Local_server_monitoring",
+    "showRepo": false
   },
   {
     "title": "Compilateur / Assembleur",
@@ -60,7 +66,8 @@
     "tags": "Compilateur, Assembleur, x86_64, C, Operations arithmétiques",
     "img": "/ass.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/compiler_assembly"
+    "repo": "https://github.com/rachelleichi/compiler_assembly",
+    "showRepo": true
   },
   {
   "title": "ChatApp sécurisée",
@@ -69,7 +76,8 @@
   "tags": "Python, Kivy, TCP, Cryptographie, Réseau",
   "img": "/py.jpg",
   "screenshots": ["/"],
-  "repo": "https://github.com/rachelleichi/chat_app_kivy"
+  "repo": "https://github.com/rachelleichi/chat_app_kivy",
+  "showRepo": true
  },
   {
     "title": "Jeu Puissance 4",
@@ -78,7 +86,8 @@
     "tags": "C++, Algorithmique, POO, IA, Minmax",
     "img": "/p4.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/puissance4_cpp"
+    "repo": "https://github.com/rachelleichi/puissance4_cpp",
+    "showRepo": true
   },
   {
     "title": "Entreps - Simulation d'entreprise",
@@ -87,7 +96,8 @@
     "tags": "Simulation, Économie, Gestion de projet, Pedagogie",
     "img": "/en.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi?tab=repositories"
+    "repo": "https://github.com/rachelleichi?tab=repositories",
+    "showRepo": false
   },
   {
     "title": "Implémentation d’algorithmes en Julia",
@@ -96,7 +106,8 @@
     "tags": "Julia, Algorithmique, Optimisation",
     "img": "/julia.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/julia_linear_prog"
+    "repo": "https://github.com/rachelleichi/julia_linear_prog",
+    "showRepo": true
   },
   {
     "title": "Conception d'un centre de données (Tier 2)",
@@ -105,16 +116,18 @@
     "tags": "Gestion de projet, Infrastructure, Réseau, Gestion d'énergie, Redondance",
     "img": "/don.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi?tab=repositories"
+    "repo": "https://github.com/rachelleichi?tab=repositories",
+    "showRepo": false
   },
   {
-    "title": "Détection de chiffres par IA (en cours)",
+    "title": "Détection de chiffres par IA ",
     "slug": "ia-detection-chiffres",
     "description": "Développement d'un réseau de neurones convolutionnel (CNN) pour la reconnaissance de chiffres sur images : collecte et augmentation de données, entraînement supervisé, évaluation (precision/recall), et déploiement léger pour tests d'inférence.",
-    "tags": "Python, Deep Learning, CNN",
+    "tags": "Python, Deep Learning, CNN, MINST",
     "img": "/det.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/ia_detection_chiffres"
+    "repo": "https://github.com/rachelleichi/ia_detection_chiffres",
+    "showRepo": true
   },
   {
     "title": "Chatbot intelligent (en cours)",
@@ -123,15 +136,17 @@
     "tags": "Python, NLP, Chatbot, Machine Learning",
     "img": "/chat.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/chatbot_ia"
+    "repo": "https://github.com/rachelleichi/chatbot_ia",
+    "showRepo": false
   },
   {
-    "title": "Prédiction de rendement agricole (en cours)",
+    "title": "Prédiction de rendement agricole ",
     "slug": "ia-rendement-agricole",
     "description": "Modèle prédictif de rendement cultivé à partir de données météorologiques et pédologiques : ingénierie de features, tests de modèles (régression, arbres, modèles d'ensemble) et évaluation croisée. Livrables : pipeline reproductible et notebook d'analyse.",
     "tags": "Data Science, Python, IA, Agriculture, Modélisation",
     "img": "/agr.jpg",
     "screenshots": ["/"],
-    "repo": "https://github.com/rachelleichi/ia_prediction_agricole"
+    "repo": "https://github.com/rachelleichi/ia_prediction_agricole",
+    "showRepo": true
   }
 ]

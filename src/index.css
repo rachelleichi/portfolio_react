@@ -2,57 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  margin: 0;
-  padding: 0;
+:root {
+  --txt1: #f5f5f5;
+  --accent1: #e2d6c6;
+  --bg1: #034b47;
+  --mint1: #cae6d5;
+  --mint-light: #f4faf6;
+  --mustard: #bc9c22;
 }
 
-
-
-
-
-/* Rounded circular project image */
-.circle-img { border-radius: 9999px; overflow: hidden; width: 300px; height: 280px; display: block; }
-.rounded-card-img {
-  border-radius: 1rem; /* rounded corners */
-  overflow: hidden;
-  width: 300px;  /* adjust width */
-  height: 280px; /* adjust height */
-  display: block;
-  object-fit: cover; /* ensures the image fills the box nicely */
+@layer base {
+  body {
+    @apply antialiased tracking-tight bg-bg1 text-white font-sans;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-/* Cercle icône avec image */
-.skill-icon {
-  width: 10rem;        /* Ajustable */
-  height: 10rem;
-  border-radius: 9999px;
-  border: 2px solid white;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@layer components {
+  .skill-lens {
+    @apply rounded-full flex items-center justify-center overflow-hidden transition-all duration-500 border-4 border-white/5;
+    background-color: var(--bg1); 
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 14rem;
+  }
+
+  .cert-lens {
+    @apply rounded-full flex items-center justify-center overflow-hidden transition-all duration-500 border border-mustard/20;
+    background-color: var(--mint-light); 
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 10rem;
+    padding: 0.5rem;
+  }
+
+  .lens-view {
+    @apply rounded-full overflow-hidden border-2 border-transparent transition-all duration-500;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-icon-img {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .cert-icon-img {
+    @apply w-full h-full object-contain transition-transform duration-700;
+  }
+
+  .skill-lens:hover {
+    @apply border-mustard/40;
+    transform: scale(1.02);
+  }
+
+  .perspective { perspective: 1200px; }
+  .transform-style-preserve-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
 }
 
-.skill-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.perspective {
-  perspective: 1000px;
-}
-
-.transform-style-preserve-3d {
-  transform-style: preserve-3d;
-}
-
-.backface-hidden {
-  backface-visibility: hidden;
-}
-
-.rotate-y-180 {
-  transform: rotateY(180deg);
-}
-
+.font-heading { @apply tracking-tighter; }
+/* REMOVED THE EXTRA } THAT WAS HERE */
