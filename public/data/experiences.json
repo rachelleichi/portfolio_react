@@ -42,5 +42,16 @@
     "skills": "IoT, Python (Flask), Raspberry Pi, MariaDB, Grafana, ESP32, STM32, Autonomie, Automatisation, Documentation",
     "img": "cam.jpg",
     "screenshots": ["/"]
+  },
+  {
+    "title": "Stage Automatisation & Réseaux - ASAP Network",
+    "slug": "stage-automatisation-ia-reseaux",
+    "company": "ASAP Network",
+    "role": "Stagiaire en Ingénierie Système, Réseau et Automatisation",
+    "duration": "Avril 2026 - Août 2026",
+    "description": "Conception et développement de solutions d'automatisation et d'outils d'intelligence artificielle. Création de workflows n8n pour l'automatisation de la rédaction de contenus. Développement d'un pipeline de corrélation et de réconciliation de factures via le parsing de documents et l'intégration d'APIs, avec une interface utilisateur Streamlit. Implémentation d'une architecture RAG et fine-tuning de modèles pour le dépannage réseau. Gestion et configuration de solutions VoIP.",
+    "skills": "n8n, Python (Streamlit), RAG, Fine-tuning, VoIP, Parsing de documents, APIs, Troubleshooting réseau",
+    "img": "asap.png",
+    "screenshots": ["/"]
   }
 ]
