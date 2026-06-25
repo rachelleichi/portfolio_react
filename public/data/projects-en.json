@@ -130,7 +130,7 @@
     "showRepo": true
   },
   {
-    "title": "Intelligent Chatbot (In Progress)",
+    "title": "Intelligent Chatbot",
     "slug": "chatbot-ai",
     "description": "Conversational agent built in Python combining NLP and machine learning techniques: preprocessing pipeline, language model training for intent classification, and dialogue module integration. Goal: simple and extensible contextual assistant.",
     "tags": "Python, NLP, Chatbot, Machine Learning",

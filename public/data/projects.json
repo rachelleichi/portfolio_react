@@ -130,7 +130,7 @@
     "showRepo": true
   },
   {
-    "title": "Chatbot intelligent (en cours)",
+    "title": "Chatbot intelligent",
     "slug": "chatbot-ia",
     "description": "Agent conversationnel construit en Python combinant NLP et techniques d'apprentissage automatique : pipeline de prétraitement, entraînement de modèles de langage pour intent classification, et intégration d'un module de dialogue. Objectif : assistant contextuel simple et extensible.",
     "tags": "Python, NLP, Chatbot, Machine Learning",

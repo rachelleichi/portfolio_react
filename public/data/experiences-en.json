@@ -42,5 +42,16 @@
     "skills": "IoT, Python (Flask), Raspberry Pi, MariaDB, Grafana, ESP32, STM32, Autonomy, Automation, Documentation",
     "img": "cam.jpg",
     "screenshots": ["/"]
+  },
+  {
+    "title": "Automation & Network Internship - ASAP Network",
+    "slug": "automation-ai-network-internship",
+    "company": "ASAP Network",
+    "role": "Systems, Network & Automation Engineering Intern",
+    "duration": "April 2026 - August 2026",
+    "description": "Design and development of automation solutions and artificial intelligence tools. Created n8n workflows for automated content generation. Developed an invoice correlation and reconciliation pipeline using document parsing and API integrations, accompanied by a Streamlit user interface. Implemented a RAG architecture and fine-tuned models for network troubleshooting. Managed and configured VoIP solutions.",
+    "skills": "n8n, Python (Streamlit), RAG, Fine-tuning, VoIP, Document Parsing, APIs, Network Troubleshooting",
+    "img": "asap.png",
+    "screenshots": ["/"]
   }
 ]
