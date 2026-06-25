@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
           <div>
             <h4 className="text-2xl font-heading text-[var(--accent1)] mb-2 uppercase font-bold tracking-tight">Coordonnées</h4>
             <div className="space-y-2 text-lg">
-              <p>5 rue pierre leca, 13003 Marseille</p>
+              <p>13 Rue Joliot Curie 91194 Gif-sur-Yvette</p>
               <p>+33 7 44 54 10 45</p>
               <p className="text-mustard font-semibold">meflahrachel@gmail.com</p>
             </div>
